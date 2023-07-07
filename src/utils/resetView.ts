@@ -1,5 +1,5 @@
 // 移动端适配
-const debounce = (fn: () => void, delay: number) => {
+export const debounce = (fn: () => void, delay: number) => {
   let timer: number;
   return function() {
     if (timer) {
