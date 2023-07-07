@@ -1,7 +1,7 @@
 <template>
   <div>
     <RouterView />
-    <van-tabbar route class="tabbar">
+    <van-tabbar route class="fixed w-screen">
       <van-tabbar-item
         fixed
         replace
@@ -9,7 +9,8 @@
         :key="menu.name"
         :to="menu.path"
         :icon="(menu.meta?.icon as string)"
-        >{{ menu.meta?.title }}
+      >
+        {{ menu.meta?.title }}
       </van-tabbar-item>
     </van-tabbar>
   </div>
@@ -21,7 +22,6 @@ import { computed } from 'vue';
 
 const routeStore = useRouteStore();
 const getMenus = computed(() => {
-  console.log('菜单', routeStore.menus[0].children);
   return routeStore.menus[0].children;
 });
 </script>
