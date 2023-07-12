@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRouteStore } from '@/stores/modules/route.ts';
+import { useRouteStore } from '@/stores/modules/route';
 import { computed } from 'vue';
 
 const routeStore = useRouteStore();
@@ -26,4 +26,4 @@ const getMenus = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

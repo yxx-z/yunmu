@@ -1,8 +1,20 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+// import { isDark } from './composables/settings';
+// import { ref, watch } from 'vue';
+
+// const theme = ref('light');
+// watch(
+//   () => isDark.value,
+//   (nv) => {
+//     theme.value = nv ? 'dark' : 'light';
+//     console.log(theme.value);
+//   }
+// );
 </script>
 
 <template>
+  <!-- <van-config-provider :theme="theme"> -->
   <RouterView v-slot="{ Component }">
     <Transition name="zoom-fade" mode="out-in">
       <div v-if="Component">
@@ -10,6 +22,7 @@ import { RouterView } from 'vue-router';
       </div>
     </Transition>
   </RouterView>
+  <!-- </van-config-provider> -->
 </template>
 
 <style>

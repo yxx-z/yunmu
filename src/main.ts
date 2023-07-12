@@ -1,8 +1,10 @@
-import 'vant/lib/index.css';
 // 移动端适配
 import './utils/resetView';
 // 原子化css
 import 'virtual:uno.css'
+import 'virtual:unocss-devtools'
+
+import 'vant/lib/index.css';
 
 import { createApp } from 'vue'
 
