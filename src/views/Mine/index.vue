@@ -1,31 +1,33 @@
 <template>
-  <div class="bg h-500px -z-19"></div>
-  <div
-    class="m-20px border-1 border-coolgray backdrop-blur-10px bg-#eee/70 dark:bg-#484848/65 rounded-xl relative -top-150px flex flex-col items-center"
-  >
-    <div class="border-4 !absolute h-170px w-170px -top-90px">
-      <van-image
-        round
-        width="10rem"
-        height="10rem"
-        src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
-      />
-    </div>
-    <section class="m-t-80px w-100% mb-10px">
-      <van-cell :border="false" title="个人信息" is-link />
-      <van-cell :border="false" title="账号与安全" is-link />
-      <van-cell :border="false" title="主题设置" is-link to="/theme" />
-      <van-cell :border="false" title="隐私政策" is-link />
-      <van-cell :border="false" title="退出登录" is-link />
-    </section>
-    <!-- <footer
-      class="rounded shadow-lg hover:bg-#484848 sm:flex sm:flex-wrap sm:items-center text-center"
+  <div>
+    <div class="bg h-500px -z-19"></div>
+    <div
+      class="m-20px border-1 border-coolgray backdrop-blur-10px bg-#eee/70 dark:bg-#484848/65 rounded-xl relative -top-150px flex flex-col items-center"
     >
-      <div class="sm:w-1/2 md:w-1/4">内容</div>
-      <div class="sm:w-1/2 md:w-1/4">内容</div>
-      <div class="sm:w-1/2 md:w-1/4">内容</div>
-      <div class="sm:w-1/2 md:w-1/4">内容</div>
-    </footer> -->
+      <div class="border-4 !absolute h-170px w-170px -top-90px">
+        <van-image
+          round
+          width="10rem"
+          height="10rem"
+          src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+      </div>
+      <section class="m-t-80px w-100% mb-10px">
+        <van-cell :border="false" title="个人信息" is-link />
+        <van-cell :border="false" title="账号与安全" is-link />
+        <van-cell :border="false" title="主题设置" is-link to="/theme" />
+        <van-cell :border="false" title="隐私政策" is-link />
+        <van-cell :border="false" title="退出登录" is-link />
+      </section>
+      <!-- <footer
+        class="rounded shadow-lg hover:bg-#484848 sm:flex sm:flex-wrap sm:items-center text-center"
+      >
+        <div class="sm:w-1/2 md:w-1/4">内容</div>
+        <div class="sm:w-1/2 md:w-1/4">内容</div>
+        <div class="sm:w-1/2 md:w-1/4">内容</div>
+        <div class="sm:w-1/2 md:w-1/4">内容</div>
+      </footer> -->
+    </div>
   </div>
 </template>
 

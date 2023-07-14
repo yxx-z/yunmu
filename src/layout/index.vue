@@ -1,6 +1,10 @@
 <template>
   <div>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <Transition name="scale" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
     <van-tabbar route class="fixed w-screen">
       <van-tabbar-item
         fixed
@@ -26,4 +30,15 @@ const getMenus = computed(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+</style>

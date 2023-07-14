@@ -16,10 +16,8 @@ import { RouterView } from 'vue-router';
 <template>
   <!-- <van-config-provider :theme="theme"> -->
   <RouterView v-slot="{ Component }">
-    <Transition name="zoom-fade" mode="out-in">
-      <div v-if="Component">
-        <component :is="Component" />
-      </div>
+    <Transition name="fade" mode="out-in" appear>
+      <component :is="Component" />
     </Transition>
   </RouterView>
   <!-- </van-config-provider> -->

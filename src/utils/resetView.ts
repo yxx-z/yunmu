@@ -18,7 +18,7 @@ const cancelDebounce = debounce(() => {
   const deviceWidth = document.documentElement.clientWidth // 获取用户的屏幕尺寸
   // 动态更改根节点的 font-size
   document.documentElement.style.fontSize = (deviceWidth * rootValue) / rootWidth + 'px'
-}, 800);
+}, 50);
 
 
 window.addEventListener('resize', cancelDebounce);
