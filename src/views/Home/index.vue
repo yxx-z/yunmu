@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="往事" />
+    <van-nav-bar title="乡承" />
   </div>
   <!-- 搜索框 -->
   <div>
