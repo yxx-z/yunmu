@@ -7,6 +7,7 @@ import 'virtual:unocss-devtools'
 import 'vant/lib/index.css';
 
 import { createApp } from 'vue'
+import { Icon } from 'vant';
 
 import App from './App.vue'
 import router from './router'
@@ -16,5 +17,6 @@ const app = createApp(App)
 
 app.use(pinia)
 app.use(router)
+app.use(Icon)
 
 app.mount('#app')

@@ -1,5 +1,8 @@
 import {type RouteRecordRaw} from 'vue-router';
 import Layout from '@/layout/index.vue'
+import gc from '@/assets/iconfont/gc.png'
+import sy from '@/assets/iconfont/sy.png'
+import my from '@/assets/iconfont/my.png'
 export const routerMenusList: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -12,7 +15,7 @@ export const routerMenusList: Array<RouteRecordRaw> = [
         component: () => import("@/views/Home/index.vue"),
         meta: {
           title: "首页",
-          icon: 'wap-home',
+          icon: sy,
         },
       },
       {
@@ -20,8 +23,8 @@ export const routerMenusList: Array<RouteRecordRaw> = [
         name: "Message",
         component: () => import("@/views/Message/index.vue"),
         meta: {
-          title: "消息",
-          icon: 'chat',
+          title: "广场",
+          icon: gc,
         },
       },
       {
@@ -30,7 +33,7 @@ export const routerMenusList: Array<RouteRecordRaw> = [
         component: () => import("@/views/Mine/index.vue"),
         meta: {
           title: "我的",
-          icon: 'manager',
+          icon: my,
         },
       }
     ]
