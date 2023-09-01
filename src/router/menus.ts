@@ -19,9 +19,9 @@ export const routerMenusList: Array<RouteRecordRaw> = [
         },
       },
       {
-        path: "message",
-        name: "Message",
-        component: () => import("@/views/Message/index.vue"),
+        path: "circus",
+        name: "Circus",
+        component: () => import("@/views/Circus/index.vue"),
         meta: {
           title: "广场",
           icon: gc,

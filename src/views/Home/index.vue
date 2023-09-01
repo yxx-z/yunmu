@@ -20,7 +20,8 @@
     <template #pulling="props">
       <img
         class="xianglu"
-        src="https://img95.699pic.com/video_cover/27/99/57/a_MIBjt5AgtQHY1641279957.jpg!/fw/820"
+        src="https://yxx-1302857646.cos.ap-beijing.myqcloud.com/shuniversity/007cdf0b-bedc-4316-9bc8-8bca95b1b48e.jpg"
+        alt="Animated GIF"
         :style="{ transform: `scale(${props.distance / 80})` }"
       />
     </template>
@@ -28,7 +29,8 @@
     <template #loosing>
       <img
         class="xianglu"
-        src="https://img95.699pic.com/video_cover/27/99/57/a_MIBjt5AgtQHY1641279957.jpg!/fw/820"
+        src="https://yxx-1302857646.cos.ap-beijing.myqcloud.com/shuniversity/007cdf0b-bedc-4316-9bc8-8bca95b1b48e.jpg"
+        alt="Animated GIF"
       />
     </template>
 
@@ -36,7 +38,8 @@
     <template #loading>
       <img
         class="xianglu"
-        src="https://img95.699pic.com/video_cover/27/99/57/a_MIBjt5AgtQHY1641279957.jpg!/fw/820"
+        src="https://yxx-1302857646.cos.ap-beijing.myqcloud.com/shuniversity/007cdf0b-bedc-4316-9bc8-8bca95b1b48e.jpg"
+        alt="Animated GIF"
       />
     </template>
 
@@ -211,7 +214,7 @@ const list = ref([
 :root {
   /* --van-nav-bar-background: linear-gradient(to right, #FFE4E1, #FFB6C1); */
   --van-nav-bar-background: linear-gradient(to right, #D3D3D3, #808080);
-  --van-nav-bar-height: 60px;
+  --van-nav-bar-height: 50px;
 }
 
 .xianglu {

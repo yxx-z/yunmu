@@ -11,5 +11,11 @@ export const routerCommonList: Array<RouteRecordRaw> = [
     name: "主题切换",
     component: () => import("@/views/Setting/theme.vue"),
     meta: {},
+  },
+  {
+    path: "/detail",
+    name: "详情",
+    component: () => import("@/views/Circus/detail/index.vue"),
+    meta: {},
   }
 ]
